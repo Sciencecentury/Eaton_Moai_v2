@@ -1,0 +1,59 @@
+<?php
+
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+use App\Models\ChangeSchedule;
+use Illminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
+use App\Models\TimeJudgment;
+use App\Models\LengthJudgment;
+/*--------------------------------------------------------------------------
+予定の編集に関するコントローラ
+--------------------------------------------------------------------------*/
+class ChangeEventController extends Controller
+{
+    // 予定変更の画面を表示するメソッド
+    public function changeWindow (Request $request) {
+        // 持ってきたタスクのidを変数に保存
+        $taskId = $request->taskId;
+        $intId = intval($taskId);
+        // dbからidに関連する情報を持ってくる
+        $changeTask = \DB::table('tasks') -> select('*') -> where('id', '=', $intId) -> get();      
+
+        return view('changeEvent',['changeTask' => $changeTask]);
+    }
+
+    // 編集ボタンを押下した後の処理
+	public function changeStore(Request $request){
+			//持ってきたタスクのidを取得する
+        $taskId = $request->id;
+        $intId = intval($taskId);
+        // dbからidに関連する情報を持ってくる
+        $changeTask = \DB::table('tasks') -> select('*') -> where('id', '=', $intId) -> get();      
+
+	 // 予定の文字数の判定をするクラス。上限は12文字なので、12文字以下かどうかを判定する
+        //入力値チェック
+        $request -> validate ([
+                'title' => 'max : 12',
+        ]);
+	
+        $request -> validate ([
+                'remarks' => 'max : 200',
+        ]);
+	//$title = $request -> title;
+	//	 if(LengthJudgment::lengthJudg($title)){
+        // 日付の判定をするクラス。論理的に正しければdbに保存する
+        if(TimeJudgment::timeJudg($request)){
+            //インスタンスを生成
+				ChangeSchedule::changeStore($request);
+            return redirect('');            
+        }else {
+	//return back();					 
+            return redirect('');            
+//        return view('changeEvent',['changeTask' => $changeTask]);
+        }
+        //return view('changeEvent',['changeTask' => $changeTask]);
+      // }
+   //     return view('changeEvent',['changeTask' => $changeTask]);
+   }
+}

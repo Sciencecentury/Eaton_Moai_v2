@@ -1,0 +1,272 @@
+/*----------------------------------------------------------------------*/
+/* 全画面に適応 */
+/*----------------------------------------------------------------------*/
+body{/*ページ全体に適応*/
+	backGround-color: #ffffff;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.loginBackColor{/*loginBackColorに適応*/
+	backGround-color: #ececec;
+	height: auto;/*高さ*/
+	width: 500px;/*横幅*/
+	margin: auto;/*ブロックを自動で幅調整*/
+	border-radius: 10px;/*角を丸くする*/
+}
+.mainTitle{/*mainTitleに適応*/
+	backGround-color: #b4c7e7;/*mainTitleの背景色*/
+	height: 65px;/*高さ*/
+	width: 500px;/*横幅*/
+	padding-top: 30px;/*余白*/
+	text-align: center;/*テキスト中央揃え*/
+	border-radius: 10px 10px 0px 0px/ 10px 10px 0px 0px;/*角を丸くする 水平/垂直（左上、右上、右下、左下）*/
+}
+.ok_button{/*実行や確認のボタンに適応*/
+	height: 40px;/*高さ*/
+	width: 100px;/*横幅*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.cancel_button{
+	height: 40px;/*高さ*/
+	width: 100px;/*横幅*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	margin-left: 30px;/*左枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+/*----------------------------------------------------------------------*/
+/* ログインに適応 */
+/*----------------------------------------------------------------------*/
+.login_labels{/*ログインのラベルに適応*/
+	margin-top: 20px;/*上枠の外側の幅を指定*/
+	text-align: center;/*テキスト中央揃え*/
+	font-size: 140%;/*フォントのサイズ*/
+}
+.login_label_name{
+	width: 250px;/*横幅*/
+	margin-left: 35px;/*左枠の外側の幅を指定*/
+}
+.login_label_password{
+	width: 250px;/*横幅*/
+	margin-left: 25px;/*左枠の外側の幅を指定*/
+}
+.login_buttons{/*ログインのボタンの囲いに適応*/
+	margin-top: 10px;/*上枠の外側の幅を指定*/
+	margin-left: 60px;/*左枠の外側の幅を指定*/
+}
+/*----------------------------------------------------------------------*/
+/* 新規登録に適応 */
+/*----------------------------------------------------------------------*/
+.register_label_name{
+	width: 250px;/*横幅*/
+	margin-left: 113px;/*左枠の外側の幅を指定*/
+}
+.register_label_password{/*ラベルのパスワード*/
+	width: 250px;/*横幅*/
+	margin-left: 104px;/*左枠の外側の幅を指定*/
+}
+.register_label_password_confirmation{/*ラベルのパスワード（確認用）*/
+	width: 250px;/*横幅*/
+	margin-left: 25px;/*左枠の外側の幅を指定*/
+}
+.register_buttons{/*新規登録のボタンの囲いに適応*/
+	margin-top: 10px;/*上枠の外側の幅を指定*/
+	margin-left: 130px;/*左枠の外側の幅を指定*/
+}
+/*----------------------------------------------------------------------*/
+/* 予定の追加,予定の編集に適応 */
+/*----------------------------------------------------------------------*/
+.Event_labels{/*ラベルに適応*/ 
+	margin-top: 20px;/*上枠の外側の幅を指定*/
+	text-align: center;/*テキスト中央揃え*/
+	font-size: 170%;/*フォントのサイズ*/
+}
+.Event_label_title{/*タイトルに適応*/
+	width: 213px;/*横幅*/
+	margin-left: 48px;/*左枠の外側の幅を指定*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	margin-right: 50px;/*右枠の外側の幅を指定*/
+	font-size: 100%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_label_class{/*組に適応*/
+	width: 213px;/*横幅*/
+	margin-left: 106px;/*左枠の外側の幅を指定*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	margin-right: 50px;/*右枠の外側の幅を指定*/
+	font-size: 100%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_label_place{/*場所に適応*/
+	width: 213px;/*横幅*/
+	margin-left: 79px;/*左枠の外側の幅を指定*/
+	margin-bottom: 30px;/*下枠の外側の幅を指定*/
+	margin-right: 50px;/*右枠の外側の幅を指定*/
+	font-size: 100%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_startDay{/*開始日時の日付に適応*/
+	width: 185px;/*横幅*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	font-size: 68%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_startTime{/*開始日時の時間に適応*/
+	width: 100px;/*横幅*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	font-size: 68%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_endDay{/*終了日時の日付に適応*/
+	width: 185px;/*横幅*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	font-size: 68%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_endTime{/*終了日時の時間に適応*/
+	width: 100px;/*横幅*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	font-size: 68%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_end_div{/*終了日時に適応*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+}
+.Event_remarks{/*備考に適応*/
+	height: 120px;/*高さ*/
+	width: 350px;/*横幅*/
+	font-size: 80%;/*フォントのサイズ*/
+}
+.Event_buttons{/*ボタンの囲いに適応*/
+	margin-top: 20px;/*上枠の外側の幅を指定*/
+	margin-left: 130px;/*左枠の外側の幅を指定*/
+}
+.Event_cancel{/*キャンセルのリンクに適応*/
+	margin-left: 40px;/*左枠の外側の幅を指定*/
+}
+/*----------------------------------------------------------------------*/
+/* 予定の追加に適応 */
+/*----------------------------------------------------------------------*/
+.addEvent_cancel_button{/*キャンセルボタン*/
+	height: 40px;/*高さ*/
+	width: 100px;/*横幅*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	margin-left: 30px;/*左枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+/*----------------------------------------------------------------------*/
+/* 予定の編集に適応 */
+/*----------------------------------------------------------------------*/
+.changeEvent_p{/*編集するタイトルに適応*/
+	text-align: center;/*テキスト中央揃え*/
+}
+.changeEvent_cancel_button{/*キャンセルボタン*/
+	height: 40px;/*高さ*/
+	width: 100px;/*横幅*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	margin-left: 30px;/*左枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+/*----------------------------------------------------------------------*/
+/* テンプレートの削除に適応 */
+/*----------------------------------------------------------------------*/
+.all_temp_block{/*テンプレートの囲いに適応*/
+	text-align: center;/*テキスト中央揃え*/
+	margin-top: 30px;/*上枠の外側の幅を指定*/
+}
+.temp_maintitle{/*メインタイトルに適応*/
+	font-size: 210%;/*フォントのサイズ*/
+	margin-bottom: 0px;/*下枠の外側の幅を指定*/
+	margin-top: 0px;/*上枠の外側の幅を指定*/
+}
+.temp_block{/*各ブロックに適応*/
+	/*display: inline-block;/*インラインブロック要素にする*/
+	backGround-color: #ececec;
+	height: auto;/*高さ*/
+	width: 200px;/*横幅*/
+	border-radius: 10px;/*角を丸くする*/
+	text-align: center;/*テキスト中央揃え*/
+	vertical-align: top;/*上端揃え*/
+	margin: auto;/*外側の幅を指定*/
+}
+.temp_content{/*各内容の囲いに適応*/
+	text-align: start;/*テキスト左揃え*/
+	margin-left: 30px;/*左枠の外側の幅を指定*/
+	margin-top: 10px;/*上枠の外側の幅を指定*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+}
+.temp_title{/*タイトルに適応*/
+	margin:auto;
+	height: 60px;/*高さ*/
+	width: 200px;/*横幅*/
+	backGround-color: #b4c7e7;/*背景色*/
+	border-radius: 5px;/*角を丸くする*/
+	padding-top: 35px;/*余白*/
+}
+.temp_class{/*組に適応*/
+	margin:auto;
+	height: 60px;/*高さ*/
+	width: 200px;/*横幅*/
+	backGround-color: #b4c7e7;/*背景色*/
+	border-radius: 5px;/*角を丸くする*/
+	padding-top: 35px;/*余白*/
+}
+.temp_place{/*場所に適応*/
+	margin:auto;
+	height: 30px;/*高さ*/
+	width: 200px;/*横幅*/
+	backGround-color: #b4c7e7;/*背景色*/
+	border-radius: 5px;/*角を丸くする*/
+	padding-top: 35px;/*余白*/
+	padding-bottom: 30px;/*余白*/
+}
+.delete_button{/*削除ボタンに適応*/
+ 	height: 40px;/*高さ*/
+	width: 100px;/*横幅*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.eve_del_title{/*タイトルのセクションに適応*/
+/*	position: absolute;*/
+	display: none;
+}
+.eve_del_class{/*組のセクションに適応*/
+/*	position: absolute;*/
+	display: none;
+}
+.eve_del_place{/*場所のセクションに適応*/
+/*	position: absolute;*/
+	display: none;
+}
+.temp_select_box{/*セレクトボックスに適応*/
+	font-size: 100%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+}
+.temp_select_box_frame{/*セレクトボックスの囲いに適応*/
+	height: 70px;/*高さ*/
+	width: 400px;/*横幅*/
+	backGround-color: #b4c7e7;/*背景色*/
+	border-radius: 10px;/*角を丸くする*/
+	padding-top: 25px;/*余白*/
+	margin: auto;/*ブロックを自動で幅調整*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	text-align: center;/*テキスト中央揃え*/
+}
+.login_labels_and_buttons{
+	margin: auto;
+}
